@@ -83,10 +83,13 @@ button#btnFullScreen svg {
 
 .validation form {
     width: 85%;
-    margin: 35px auto;
-    position: relative; 
+    margin: 25px;
+    position: relative;
     max-width: 365px;
+    position: absolute;
+    bottom: 5vh;
 }
+ 
 form img { 
     position: absolute;
     z-index: 99;
@@ -104,7 +107,7 @@ img.boy {
 }
 select:invalid { color: red; }
 .validation button {
-    background: #ff5400;
+    background: #03184E;
     color: white;
     /* border: 1px solid; */
     font-size: 1.0rem;
