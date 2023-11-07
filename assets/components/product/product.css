@@ -32,11 +32,11 @@
     pointer-events: none;
 }
 .produto .prod-val .title-prod {
-    color: black;
+    color: #03184e;
     margin: 0px;
     font-weight: 700;
-    font-size: 1.3rem;
-}
+    font-size: 1.5rem;
+    line-height: 1.1;}
 .produto .prod-val .valor {
     color: #545454;
     font-weight: 400;
@@ -44,12 +44,12 @@
 }
 .produto .quantidade button {
     width: 60px;
-    height: 32px;
+    height: 41px;
     border: 0px;
     border-radius: 12px;
     color: white;
-    background-color: #ff5400;
-    margin: 5px;
+    background-color: #f39c12;
+    margin: 10px 4px;
     font-size: 15px;
 }
 .produto .quantidade input {
