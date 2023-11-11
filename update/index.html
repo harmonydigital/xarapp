@@ -299,7 +299,7 @@ formupdateMenu.addEventListener('submit', function(e){
   e.preventDefault()  
   msgLoadContainer.style.cssText='display:flex;'
 
-  db.collection('cardapio').doc('cardapioatual').set({dataProd:data})
+  // db.collection('cardapio').doc('cardapioatual').set({dataProd:data})
   db.collection('cardapio').doc('cardapioatual').set( {dataProd:  
     [
     {
@@ -1142,7 +1142,7 @@ formupdateMenu.addEventListener('submit', function(e){
 
               }
         ],
-        "name": "Adega",
+        "name": "Bebidas",
         "id": generateID(),
         "image2": "assets/images/glass.png",
         "image": "assets/images/glass.png"
@@ -1151,7 +1151,7 @@ formupdateMenu.addEventListener('submit', function(e){
         "key": "comer",
         "image2": "assets/images/burguer.png",
         "image": "assets/images/burguer.png",
-        "name": "Refeição",
+        "name": "Conveniência",
         "itens": [
         {
                 "id":generateID(),              

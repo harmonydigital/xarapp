@@ -1,8 +1,8 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
-    background-color: #03184E;
+    background-color: white;
     margin: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: 800px; 
     margin: 0 auto;
 }
@@ -72,14 +72,16 @@ h1 {
     font-weight: 300;
     display: block;
     text-align: center;
+    
 }
 h2 {
     padding: 0px 20px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     width: 300px;
-    color: white;
+    color: black;
     margin: 10px 0px 15px;
-    line-height: 1.1;
+    line-height: 1.0;
+    font-weight: 300;
 }
 .controls {
     position: absolute;

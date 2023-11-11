@@ -1,7 +1,7 @@
 .user {
   
   font-family: 'Lexend Deca', sans-serif;
-  color: white;
+  color: #73859e;
   padding: 5px;
   font-size: 15px;
   font-weight: 300;
@@ -15,10 +15,10 @@
 }
 .user strong {
   font-weight: bold;
-    color: white;
+    color: #73859e;
 }
 .user svg { 
-    color: white;
+    color: #73859e;
 }
 .user img  {
   width: 16px;

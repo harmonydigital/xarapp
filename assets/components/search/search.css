@@ -11,7 +11,7 @@
     align-items: center;
 }
 .search svg {
-    color: #ff5400 !important;
+    color: #d9d9d9 !important;
 }
 .search .controls {
     position: absolute;}
@@ -67,7 +67,7 @@ div#searchResult .ux {
 
   }
   .contentSearch {
-    background: #ff5400;
+    background: white;
     width: 100%;
     position: fixed;
     height: 100%;

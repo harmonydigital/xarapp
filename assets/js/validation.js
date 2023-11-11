@@ -4,21 +4,20 @@ var inputnamelogin=document.getElementById('userName')
 
 
 // FUNÇAO DE FOCUS PRA TECLADO
-var logo=document.querySelector('.validation img')
-var textLogin=document.querySelector('form .content-text')
+var logo=document.querySelector('.validation img') 
 var socialMedia=document.querySelector('.socialmedia')
 
 inputnamelogin.addEventListener('focus',()=>{ 
  
   //  cria css, para otimzar espaço em tela
-  logo.style.cssText='max-width: 113px;', textLogin.style.cssText='display:none;', socialMedia.style.cssText='display:none;'
+  logo.style.cssText='max-width: 113px;',   socialMedia.style.cssText='display:none;'
   
 })
 
 inputnamelogin.addEventListener('focusout',()=>{
  
  //  cria css, para otimzar espaço em tela
- logo.style.cssText='max-width280px', textLogin.style.cssText='display:flex;', socialMedia.style.cssText='display:inherit;'
+ logo.style.cssText='max-width280px',   socialMedia.style.cssText='display:inherit;'
  
 })
 
