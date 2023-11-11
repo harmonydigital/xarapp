@@ -266,7 +266,8 @@
  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
  <script type="module">
- 
+    import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+  
     const firebaseConfig = {
       apiKey: "AIzaSyDuvA_WF4pn-jl0VNyTqBCAXeblEBrO2Tw",
       authDomain: "xara-c4426.firebaseapp.com",
@@ -278,7 +279,9 @@
 
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig); 
-
+ 
+      const auth = getAuth();
+      const provider = new GoogleAuthProvider()
       // Initialize Cloud Firestore and get a reference to the service
       const db = firebase.firestore();
 
@@ -481,8 +484,7 @@
           let initF=true  // FALSE PARA MAQUINA DELIVERY
           let idClient=localStorage.getItem("idClient");
 
-            console.log('DELIVERY TODOS',databaseDeliveryArr)
-            console.log('ID DO CLIENTE',idClient)
+           
             function orderSend(){ 
 
               setTimeout(function(){ 
