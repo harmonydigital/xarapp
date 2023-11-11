@@ -50,7 +50,7 @@
       </div>
 
       <div class="footer" >  
-        <button> 
+        <button id='gaut'> 
           <div>
           <img src="assets/images/icongoogle.png" alt="">
         </div>  
@@ -242,9 +242,42 @@
       messagingSenderId: "479792460856",
       appId: "1:479792460856:web:b9d4b1edbba6262ec6a2cd"
     }; 
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
     import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
 
-      // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider()
+
+
+      const gaut= document.getElementById("gaut");
+  // const signOutButton = document.getElementById("signOutButton");
+
+  
+  const userSignIn = async() => {
+    signInWithPopup(auth, provider)
+    .then((result) => {
+        const user = result.user
+        console.log(user);
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message
+    })
+  }
+
+  onAuthStateChanged(auth, (user) => {
+    if(user) {
+      
+     console.log( user.email)
+    } else {
+   
+    }
+  })
+
+
+  gaut.addEventListener('click', userSignIn);
+
+
       firebase.initializeApp(firebaseConfig);   
       // Initialize Cloud Firestore and get a reference to the service
       const db = firebase.firestore();
