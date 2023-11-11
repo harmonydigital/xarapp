@@ -7,19 +7,8 @@ var inputnamelogin=document.getElementById('userName')
 var logo=document.querySelector('.validation img') 
 var socialMedia=document.querySelector('.socialmedia')
 
-inputnamelogin.addEventListener('focus',()=>{ 
  
-  //  cria css, para otimzar espaço em tela
-  logo.style.cssText='max-width: 113px;',   socialMedia.style.cssText='display:none;'
-  
-})
-
-inputnamelogin.addEventListener('focusout',()=>{
  
- //  cria css, para otimzar espaço em tela
- logo.style.cssText='max-width280px',   socialMedia.style.cssText='display:inherit;'
- 
-})
 
 if (localStorage.getItem("lastname")){
   validateView.style.display="none"
