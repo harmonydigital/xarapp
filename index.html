@@ -36,30 +36,35 @@
   
   <div id="list"></div>
     <div class="validation" id="validation" >
-      <div style="  justify-content: center; ">
+  <div class="loginCont"> 
+    
+          <div class='header'>
 
-        <button id="btnFullScreen" onclick="fullScreen(event)"><i style="color: red;" class="fa-solid fa-expand"></i>
-          <span>tela cheia</span>
-        </button>
+            <div class="brand" >  
+              <img src="assets/images/logo.png" alt="">
+            </div>
+            <button id="btnFullScreen" onclick="fullScreen(event)"><i style="color: red;" class="fa-solid fa-expand"></i>
+              <span>tela cheia</span>
+            </button>
 
-        <button id="btnCloseFullScreen" onclick="closeFullscreen(event)"> <i class="fa-regular fa-circle-xmark"></i></button> 
-      </div>
+            <button id="btnCloseFullScreen" onclick="closeFullscreen(event)"> <i class="fa-regular fa-circle-xmark"></i></button> 
+          </div>
 
-      <div class="content" >  
-        <img src="assets/images/logo.png" alt="">
-      </div>
+          <div class="content brand" >  
+            <img src="assets/images/logo.png" alt="">
+          </div>
 
-      <div class="footer" >  
-        <button id='gaut'> 
-          <div>
-          <img src="assets/images/icongoogle.png" alt="">
-        </div>  
-
-          <span>Continue com Google</span>
-        </button>
-      </div>
-      
-    </div> 
+          <div class="footer" >  
+            <button id='gaut'> 
+              <div>
+                <img src="assets/images/icongoogle.png" alt="">
+              </div>   
+              <span>Continue com Google</span>
+            </button> 
+          </div>
+          
+        </div> 
+  </div> 
 
     <script>
      
@@ -258,7 +263,7 @@
     signInWithPopup(auth, provider)
     .then((result) => {
         const user = result.user
-        console.log(user);
+        console.log('result',result);
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message

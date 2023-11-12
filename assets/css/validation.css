@@ -18,8 +18,9 @@ button#btnFullScreen span {
     text-transform: uppercase;
     display: inline;
     position: relative;
-    bottom: 3px;
+    bottom: 0;
     opacity: .8;
+    margin: 1px 5px;
 }
 button#btnCloseFullScreen {
     background: transparent;
@@ -43,7 +44,7 @@ button#btnFullScreen svg {
     width: 100%;
      
     transition: .3s;
-    margin: 35% auto;
+    margin: 10% auto;
 
 }
 div#validation .footer {
