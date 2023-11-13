@@ -249,7 +249,10 @@
   onAuthStateChanged(auth, (user) => {
     if(user) {
       
-     console.log( user.email)
+      console.log( user)
+      if( user){
+        validation(event)
+      }
     } else {
    
     }
