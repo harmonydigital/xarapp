@@ -10,7 +10,7 @@
     padding:0px;
     z-index: 999;
     background-color: black;
-    /* display: none !important; */
+    display: none;
    
 }
 button#btnFullScreen span {

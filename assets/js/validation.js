@@ -5,7 +5,8 @@
 
   function validation(event){ 
       event.preventDefault()  
-      console.log('$$',validateView) 
+      validateView.classList.toggle('show')
+  
 
   }
 
