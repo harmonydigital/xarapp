@@ -249,11 +249,13 @@
   onAuthStateChanged(auth, (user) => {
     if(user) {
       
-      console.log( user)
-      var guser=user.displayName
+      console.log(user)
+
+      var guser=user.displayName 
+      var gphoto=user.photoURL
 
       if(user){
-        validation(event,guser)
+        validation(event,guser,gphoto)
       }
       
     } else {
