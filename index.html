@@ -250,9 +250,12 @@
     if(user) {
       
       console.log( user)
-      if( user){
-        validation(event)
+      var guser=user.displayName
+
+      if(user){
+        validation(event,guser)
       }
+      
     } else {
    
     }
