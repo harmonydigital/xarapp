@@ -10,7 +10,7 @@
       var gname=guser
       var gnphoto=gphoto
       validateView.classList.toggle('show')
-      console.log('gname',gname)
+      console.log('gname M',gname)
       console.log('user',document.getElementById('user'))
 
       var userContainer=document.getElementById('user')
@@ -23,7 +23,7 @@
       </div>
       
         <div>
-          `+gnphoto+` 
+        <img src=' `+gnphoto+` ' alt=''>
         </div>
       
       `
