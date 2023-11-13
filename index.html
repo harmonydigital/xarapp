@@ -239,6 +239,7 @@
     .then((result) => {
         const user = result.user
         console.log('result',result);
+        validation(event)
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message

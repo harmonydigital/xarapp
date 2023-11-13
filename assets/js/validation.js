@@ -5,7 +5,7 @@
 
   function validation(event){ 
       event.preventDefault()  
-      console.log('val',validateView) 
+      console.log('$$',validateView) 
 
   }
 
