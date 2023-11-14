@@ -253,18 +253,18 @@ STATUSMESA=false
    </button>   
       </div>`;  
    cartContainer.innerHTML= `<div class="content"><h2>Pedido</h2><p ><span id="itensTotal"></span>  Itens na Cesta</p></div>`;  
-   msg="Olá, Pedido via APP " + "%0a" + "Nome: "+inputUserName
+//    msg="Olá, Pedido via APP " + "%0a" + "Nome: "+inputUserName
    retirada="";
 
    
     //  url = "https://wa.me/5512982969703?text=" // Seu numero test
-     url = "https://wa.me/5512996048083?text=" // Seu numero Produção
-   + "*Pedido via APP* <3" + "%0a" // Mensagem personalizada
-   + "%0a" // Quebra de linhas
-   + "*Nome*: " + inputUserName + "%0a" // Dados do formulário
-   + "%0a" // Quebra de linhas
-   + "*Itens Pedidos*" + "%0a" // Mensagem personalizada
-   + "%0a" // Quebra de linhas
+//      url = "https://wa.me/5512996048083?text=" // Seu numero Produção
+//    + "*Pedido via APP* <3" + "%0a" // Mensagem personalizada
+//    + "%0a" // Quebra de linhas
+//    + "*Nome*: " + inputUserName + "%0a" // Dados do formulário
+//    + "%0a" // Quebra de linhas
+//    + "*Itens Pedidos*" + "%0a" // Mensagem personalizada
+//    + "%0a" // Quebra de linhas
 
 
   allordersBuy=[]
@@ -311,7 +311,7 @@ STATUSMESA=false
                     `;  
                     // msg+=``+productsMap.quantidade +`,`+productsMap.name +`,`+prodMultiply.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +`` 
                 
-                    url+=""+productsMap.quantidade+"un. / *"+productsMap.name+"* / " + prodMultiply.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+                    // url+=""+productsMap.quantidade+"un. / *"+productsMap.name+"* / " + prodMultiply.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
                     +"%0a" // Dados do formulário
 
 
