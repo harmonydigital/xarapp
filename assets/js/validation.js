@@ -13,10 +13,11 @@
 
       validateView.classList.toggle('show') 
 
-      userContainer.style.cssText='justify-content: flex-end;display: flex;'
+      userContainer.style.cssText=`justify-content: flex-end;display: flex;a lign-items: center;
+      font-size: 13px;`
       userContainer.innerHTML=` 
         <div>
-          `+gname+` 
+          Olá, `+gname+` 
         </div> 
         <div style="
         width: 25px;

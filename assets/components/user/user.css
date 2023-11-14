@@ -1,12 +1,13 @@
 .user {
-  
   font-family: 'Lexend Deca', sans-serif;
   color: #73859e;
   padding: 5px;
   font-size: 15px;
   font-weight: 300;
-  margin-top: 20px;
+  margin: 5px auto;
+  width: 90%;
 }
+ 
 .user span {
     font-weight: 300;
  
@@ -21,10 +22,12 @@
     color: #73859e;
 }
 .user img  {
-  width: 16px;
+  width: 100%;
   margin: 0px auto;
   position: relative;
   top: 4px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #ddd;
 }
 .user select { 
 
