@@ -18,7 +18,11 @@
         <div>
           `+gname+` 
         </div> 
-        <div>
+        <div style="
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        ">
           <img src=' `+gnphoto+` ' alt=''>
         </div>
       `
