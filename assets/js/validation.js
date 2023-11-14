@@ -9,26 +9,20 @@
       
       var gname=guser
       var gnphoto=gphoto
-      validateView.classList.toggle('show')
-      console.log('gname M',gname)
-      console.log('user',document.getElementById('user'))
-
       var userContainer=document.getElementById('user')
 
-      userContainer.innerHTML=`
+      validateView.classList.toggle('show') 
 
-      
-      <div>
-        `+gname+` 
-      </div>
-      
+      userContainer.style.cssText='justify-content: flex-end;display: flex;'
+      userContainer.innerHTML=` 
         <div>
-        <img src=' `+gnphoto+` ' alt=''>
+          `+gname+` 
+        </div> 
+        <div>
+          <img src=' `+gnphoto+` ' alt=''>
         </div>
-      
       `
-
-  }
+      }
 
 
 // function initApp(){  
